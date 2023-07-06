@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0; /* Entfernt den Standard-Innenabstand */
+  font-family: Arial, sans-serif;
+}
+
+.spacer {
+  height: 100px; /* Hinzufügen eines Abstands oberhalb des ersten Abschnitts */
+}
+
+.header {
+  position: relative; /* Positionierung für den grünen Streifen */
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+h1 {
+  font-size: 4em;
+  font-family: 'Abril Fatface'; 
+  font-style: italic;
+}
+
+h3 {
+  font-size: 1.3em; 
+  line-height: 0.5; 
+  font-style: italic;
+}
+
+.left {
+  text-align: center; 
+}
+
+.right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 200px; /* Größere Kreise */
+  height: 200px; /* Größere Kreise */
+  background-size: cover;
+  background-position: center;
+  margin: -15px; /* Erzeugt eine Überschneidung */
+}
+
+.circle:nth-child(1) {
+  background-image: url('img/bild1.jpg');
+  z-index: 2; /* Dieser Kreis liegt jetzt über den anderen */
+}
+
+.circle:nth-child(2) {
+  background-image: url('img/bild2.jpg');
+  z-index: 1; 
+}
+
+.circle:nth-child(3) {
+  background-image: url('img/bild3.jpg');
+  z-index: 1; 
+}
+
+.circle:nth-child(4) {
+  background-image: url('img/bild4.jpg');
+  z-index: 1; 
+}
+
+/* Grüner Streifen */
+.green-bar {
+  position: fixed; /* Fixierung am oberen Rand der Seite */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #00FF00; /* Neon Grün */
+  padding: 10px; /* Anpassen des Abstands innerhalb des Streifens */
+  text-align: center;
+  z-index: 999; /* Stellt sicher, dass der Streifen über anderen Elementen liegt */
+}
+
+.green-bar h2 {
+  margin: 0; /* Entfernen Sie den Standardabstand um den Text */
+  font-size: 1.2em; /* Schriftgröße anpassen */
+  font-weight: bold;
+  font-style: italic;
+  color: black; /* Schriftfarbe */
+}
+
+/* Zweiter Abschnitt */
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0; /* Erhöht den Abstand zwischen den Abschnitten */
+}
+
+.image-container {
+  width: 20%; /* Verkleinert das Bild um 50% */
+  padding: 0 200px; /* Fügt Abstand zum linken und rechten Rand hinzu */
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.text-container
+{
+  width: 60%;
+  padding-right: 100px; /* Fügt Abstand zum rechten Rand hinzu */
+  text-align: right;
+}
+
+.text-container h1 {
+  font-size: 3em;
+  font-family: 'Abril Fatface'; 
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.text-container p {
+  font-family: 'Arial', sans-serif;
+  font-size: 1em; /* Gleiche Schriftgröße wie "Stipendium: Woman in Tech" */
+  line-height: 1.5; /* Gleicher Zeilenabstand wie "Stipendium: Woman in Tech" */
+  font-style: normal;
+}
+
+/* Dünne grüne Linie zwischen dem zweiten und dritten Abschnitt */
+.section-divider {
+  width: 90%; /* Verkürzt die Breite der Linie */
+  height: 1px;
+  background-color: #00FF00; /* Neon Grün */
+  margin: 20px auto; /* Zentriert die Linie und fügt Abstand oben und unten hinzu */
+}
+
+/* Dritter Abschnitt */
+.section.reversed {
+  flex-direction: row;
+}
+
+.section.reversed .text-container {
+  text-align: right;
+  padding-right: 200px; /* Vergrößern des Abstands zum rechten Rand */
+  padding-left: 200px; /* Vergrößern des Abstands zum linken Rand */
+}
+
+.section.reversed .image-container {
+  width: 18%; /* Verkleinert das Bild um 35% */
+  padding: 0 50px; /* Fügt Abstand zum linken und rechten Rand hinzu */
+}
+
+/* Hellgrauer Streifen mit Zitat */
+.quote-container {
+  background-color: #f5f5f5; /* Hellgrau */
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+  width: 90%; /* Anpassen der Breite auf 90% */
+  margin: 0 auto; /* Zentrieren des Streifens */
+  position: fixed; /* Festpositionierung am unteren Rand der Seite */
+  bottom: 0;
+}
+
+.quote-container blockquote {
+  font-style: italic;
+  font-size: 1.2em;
+  margin: 0;
+  color: black; /* Schriftfarbe auf schwarz setzen */
+}
