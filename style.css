@@ -25,8 +25,9 @@ body {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 3.8em;
   font-family: 'Abril Fatface'; 
+  font-weight: bold;
   font-style: italic;
 }
 
@@ -123,6 +124,7 @@ h3 {
 .text-container h1 {
   font-size: 3em;
   font-family: 'Abril Fatface'; 
+  font-weight: bold;
   font-style: italic;
   margin-bottom: 10px;
 }
@@ -134,7 +136,7 @@ h3 {
   font-style: normal;
 }
 
-/* Dünne grüne Linie zwischen dem zweiten und dritten Abschnitt */
+/* Dünne grüne Linie zwischen den Abschnitten */
 .section-divider {
   width: 90%; /* Verkürzt die Breite der Linie */
   height: 1px;
@@ -142,37 +144,20 @@ h3 {
   margin: 20px auto; /* Zentriert die Linie und fügt Abstand oben und unten hinzu */
 }
 
-/* Dritter Abschnitt */
-.section.reversed {
-  flex-direction: row;
-}
-
-.section.reversed .text-container {
-  text-align: right;
-  padding-right: 200px; /* Vergrößern des Abstands zum rechten Rand */
-  padding-left: 200px; /* Vergrößern des Abstands zum linken Rand */
-}
-
-.section.reversed .image-container {
-  width: 18%; /* Verkleinert das Bild um 35% */
-  padding: 0 50px; /* Fügt Abstand zum linken und rechten Rand hinzu */
-}
-
-/* Hellgrauer Streifen mit Zitat */
+/* Zitat am Ende der Seite */
 .quote-container {
-  background-color: #f5f5f5; /* Hellgrau */
-  padding: 20px;
+  background-color: #f2f2f2; /* Hellgrau */
+  padding: 30px;
   text-align: center;
-  margin: 0;
-  width: 90%; /* Anpassen der Breite auf 90% */
-  margin: 0 auto; /* Zentrieren des Streifens */
-  position: fixed; /* Festpositionierung am unteren Rand der Seite */
+  position: fixed;
   bottom: 0;
+  left: 0;
+  width: 90%; /* Verkürzt die Breite auf 90% */
 }
 
 .quote-container blockquote {
-  font-style: italic;
-  font-size: 1.2em;
   margin: 0;
-  color: black; /* Schriftfarbe auf schwarz setzen */
+  font-size: 1.2em;
+  font-style: italic;
+  color: black; /* Schriftfarbe schwarz */
 }
