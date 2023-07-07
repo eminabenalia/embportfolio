@@ -5,29 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <title>Emina Benalia Portfolio</title>
-    <style>
-        /* Stile für Smartphones im Hochformat */
-        @media screen and (max-width: 767px) {
-            .section {
-                flex-direction: column;
-            }
-
-            .section .image-container {
-                order: 1;
-                margin-bottom: 20px;
-            }
-
-            .section .text-container {
-                order: 2;
-            }
-        }
-    </style>
 </head>
 <body>   
   <!-- Grüner Streifen -->
   <div class="green-bar">
     <h2>Bewerbung um Stipendium "Woman in Tech" an der iu - Internationale Hochschule</h2>
   </div>
+  
 
   <!-- Erster Abschnitt -->
   <div class="spacer"></div>
@@ -35,18 +19,18 @@
       <div class="left">
           <h1>Emina Benalia</h1>
           <h3>Stipendium "Woman in Tech"</h3>
-          <h3>iu - Internationale Hochschule</h3>
+          <h3>Studiengang IT-Management (M.A.)</h3>
       </div>
       <div class="right">
-          <a href="#abschnitt2"><div class="circle" style="background-image: url('img/bild1.jpg');"></div></a>
-          <a href="#abschnitt3"><div class="circle" style="background-image: url('img/bild2.jpg');"></div></a>
-          <a href="#abschnitt4"><div class="circle" style="background-image: url('img/bild3.jpg');"></div></a>
-          <a href="#abschnitt5"><div class="circle" style="background-image: url('img/bild4.jpg');"></div></a>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
       </div>
   </div>
 
     <!-- Zweiter Abschnitt -->
-    <div id="abschnitt2" class="section">
+    <div class="section">
         <div class="image-container">
             <img src="img/bild1.jpg" alt="Wdegang">
         </div>
@@ -61,36 +45,51 @@
     </div>
 
     <!-- Dritter Abschnitt -->
-    <div id="abschnitt3" class="section">
-        <div class="image-container">
-            <img src="img/bild2.jpg" alt="Weg in die IT-Branche">
-        </div>
+    <div class="section-divider"></div> <!-- Linie -->
+    <div class="section reversed">
         <div class="text-container">
             <h1>Vom Journalismus zur IT</h1>
-            <p>Mein Volontariat legte den Grundstein für meinen Einstieg in die IT-Branche. Während meiner redaktionellen Ausbildung spezialisierte ich mich auf Online-Berichterstattung und Social Media Management. Die Arbeit mit digitalen Medien weckte mein Interesse an der zugrundeliegenden Technologie, die die globale Vernetzung und den grenzenlosen Wissensaustausch ermöglicht. Vor allem fragte ich mich, was diese Technologie antreibt und wie ich selbst einen Beitrag dazu leisten könnte.</p>
+            <p>Mein Volontariat legte den Grundstein für meinen Einstieg in die IT-Branche. Während meiner redaktionellen Ausbildung spezialisierte ich mich auf Online-Berichterstattung und Social Media Management. Die Arbeit mit digitalen Medien weckte mein Interesse an der zugrundeliegenden Technologie, die die globale Vernetzung und den grenzenlosen Wissensaustausch ermöglicht. Vor allem fragte ich mich, was diese "Algorithmen" waren, von denen alle sprachen. Getrieben von dieser Neugier und dem Wunsch, tiefer in diesesFeld einzutauchen, entschloss ich mich, ein Informatikstudium aufzunehmen.</p>
+            <p>Im April 2019 begann ich mein Studium der Informatik und Wirtschaft an der HTW Berlin - ein spezielles Programm, das sich an Frauen aller Geschlechteridentitäten richtet. Dieser Studiengang ist einer von nur vier monoedukativen MINT-Studiengängen in ganz Deutschland. Dass ich einen der begehrten Studienplätze erhielt, erfüllt mich mit Stolz und Dankbarkeit. Neben der Vermittlung fachlicher Kompetenzen legt dieser Studiengang besonderen Wert auf Soft Skills und schärft das Bewusstsein für die Bedeutung von Vielfalt in IT-Berufen. Dies hat meinen Blickwinkel erweitert und bestärkt mich darin, für eine diverse und inklusive Tech-Branche einzutreten.</p>
+        </div>
+        <div class="image-container">
+            <img src="img/bild2bunt.jpg" alt="Weg in die IT-Branche">
         </div>
     </div>
 
     <!-- Vierter Abschnitt -->
-    <div id="abschnitt4" class="section">
-        <div class="image-container">
-            <img src="img/bild3.jpg" alt="Als Frau geht das nicht!">
-        </div>
-        <div class="text-container">
-            <h1>Als Frau geht das nicht!</h1>
-            <p>Während meines Studiums habe ich den Digitalchef der Funke Mediengruppe interviewt, der es ohne Studium, wie in der Branche üblich, in eine hohe Führungsposition geschafft hat. Auf meine Frage, ob er diese Position auch als Frau hätte erreichen können, antwortete er: "Wahrscheinlich nicht! Zu seiner Zeit und unter seinen Bedingungen sei es als Frau sehr schwierig gewesen. Schließlich seien Positionen oft unter der Hand verteilt worden und Männer hätten nun mal andere Männer empfohlen.</p>
-        </div>
+<div class="section-divider"></div> <!-- Linie -->
+<div class="section">
+    <div class="image-container">
+        <img src="img/bild3.jpg" alt="Bild 3">
     </div>
+    <div class="text-container">
+        <h1>"Als Frau wäre es nicht möglich!"</h1>
+        <p>Während meines Studiums habe ich den Digitalchef der Funke Mediengruppe interviewt, der es ohne Studium, wie in der Branche üblich, in eine hohe Führungsposition geschafft hat. Auf meine Frage, ob er diese Position auch als Frau hätte erreichen können, antwortete er: "Wahrscheinlich nicht! Zu seiner Zeit und unter seinen Bedingungen sei es als Frau sehr schwierig gewesen. Schließlich seien Positionen oft unter der Hand verteilt worden und Männer hätten nun mal andere Männer empfohlen.</p>
+        <p>Ich bin fest davon überzeugt, dass sich die Zeiten ändern. Dass gerade jetzt die männerdominierten Branchen im Umbruch sind. Frauen vernetzen sich. Frauen empfehlen Frauen. Frauen fördern Frauen.</p>
+        <p>Die ehrliche Aussage des Digitalchefs hat mich dazu gebracht, darüber nachzudenken, wie auch ich meinen Beitrag zu diesem Wandel leisten kann. Schon während meines Studiums habe ich deshalb das "fiw-Netzwork" gegründet - eine Plattform für Studentinnen und Alumni aus den MINT-Fächern. Diese Plattform soll Studentinnen auch über das Studium hinaus vernetzen und als Hilfs- und Beratungsplattform dienen. Außerdem habe ich während meines Studiums begonnen, ehrenamtlich Bewerbungsunterlagen von Kommilitoninnen zu schreiben und zu korrigieren, um ihnen den Einstieg in die IT-Branche zu erleichtern.</p>
+        <p>Hilfe, Vernetzung und Wachstum sind entscheidend für eine vielfältige IT-Branche und damit für eine gerechtere Gesellschaft. Ich hoffe, dass ich mit meinem Engagement einen Teil dazu beitragen kann, die IT-Branche zu verändern und den Weg für mehr Gleichberechtigung zu ebnen.</p>
+    </div>
+</div>
 
-    <!-- Fünfter Abschnitt -->
-    <div id="abschnitt5" class="section">
-        <div class="image-container">
-            <img src="img/bild4.jpg" alt="Die IT-Zukunft ist bunt und vielfältig">
-        </div>
-        <div class="text-container">
-            <h1>Die IT-Zukunft ist bunt und vielfältig</h1>
-            <p>Mein Weg vom Journalismus in die IT-Branche und mein Studium im monoedukativen Studiengang Informatik und Wirtschaft an der HTW Berlin haben mein Bewusstsein für die Vielfalt in der Technologiebranche geprägt. Das "Woman in Tech"-Stipendium der IU Internationalen Hochschule repräsentiert genau die Werte und Ziele, die ich teile und die ich weiter fördern möchte.</p>
-        </div>
+<!-- Fünfter Abschnitt -->
+<div class="section-divider"></div> <!-- Linie -->
+<div class="section reversed">
+    <div class="text-container">
+        <h1>Die Zukunft der IT ist bunt</h1>
+        <p>Mein Weg vom Journalismus in die IT-Branche und mein Studium im monoedukativen Studiengang Informatik und Wirtschaft an der HTW Berlin haben mein Bewusstsein für die Vielfalt in der Technologiebranche geprägt. Das "Woman in Tech"-Stipendium der IU Internationalen Hochschule repräsentiert genau die Werte und Ziele, die ich teile und die ich weiter fördern möchte.</p>
+        <p>Die finanzielle Unterstützung durch das Stipendium würde es mir ermöglichen, mich neben Familie und Beruf auf die Vertiefung meiner bisher erworbenen IT-Kenntnisse zu konzentrieren.</p>
+        <p>Mit meinen vielfältigen Erfahrungen sowohl im Journalismus als auch in der IT-Branche, ergänzt durch meinen akademischen Hintergrund, bin ich überzeugt, dass ich eine vielseitige Perspektive einbringen und einen nachhaltigen Beitrag für die IU-Gemeinschaft und darüber hinaus leisten kann.</p>
+        <p>Mein zukünftiges Ziel ist eine Führungsposition, die es mir ermöglicht, die Digitalisierung in Berlin und später auch auf Bundesebene mitzugestalten und voranzutreiben. Mit dieser Position möchte ich auch die Vielfalt in der IT-Branche fördern. Das "Woman in Tech"-Stipendium ist eine tolle Möglichkeit, dieses Ziel zu erreichen. Es wird mir nicht nur ermöglichen, meine akademische Laufbahn fortzusetzen, sondern auch meine Fähigkeiten und mein Wissen zu erweitern, um eine Förderin von Vielfalt und Inklusion in der Technologiebranche zu werden. Mit der Unterstützung dieses Stipendiums bin ich fest davon überzeugt, dass ich meine Ziele erreichen und einen positiven Einfluss auf die Technologiebranche ausüben kann.</p>
+    </div>
+    <div class="image-container">
+        <img src="img/bild4.jpg" alt="Bild 4">
+    </div>
+</div>
+
+    <!-- Zitat -->
+    <div class="quote-container">
+        <blockquote>"Es ist der absolute Luxus, Leidenschaft mit Leistung zu kombinieren. Und es ist der wahre Weg zum Glück!" - Sheryl Sandberg (Geschäftsführerin von Facebook)</blockquote>
     </div>
 
 </body>
