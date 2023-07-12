@@ -104,7 +104,7 @@ h3 {
 }
 
 .image-container {
-  width: 20%; /* Verkleinert das Bild um 50% */
+  width: 25%; /* Verkleinert das Bild um 50% */
   padding: 0 200px; /* Fügt Abstand zum linken und rechten Rand hinzu */
 }
 
@@ -154,7 +154,7 @@ h3 {
 }
 
 .section.reversed .image-container {
-  width: 18%; /* Verkleinert das Bild um 35% */
+  width: 25%; /* Verkleinert das Bild um 35% */
   padding: 0 50px; /* Fügt Abstand zum linken und rechten Rand hinzu */
 }
 
@@ -175,4 +175,108 @@ h3 {
   font-size: 1.2em;
   margin: 0;
   color: black; /* Schriftfarbe auf schwarz setzen */
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left {
+    margin-bottom: 20px;
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .circle {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+  }
+
+  .right .circle {
+    order: -1;
+  }
+  
+  .right .circle:nth-child(1) {
+    background-image: url('img/bild1.jpg');
+  }
+
+  .right .circle:nth-child(2) {
+    background-image: url('img/bild2.jpg');
+  }
+
+  .right .circle:nth-child(3) {
+    background-image: url('img/bild3.jpg');
+  }
+
+  .right .circle:nth-child(4) {
+    background-image: url('img/bild4.jpg');
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Code nur für Bildschirme mit maximal 768px Breite */
+  .section {
+    flex-direction: column; /* Elemente vertikal anordnen */
+    align-items: center; /* Zentriert den Inhalt horizontal */
+  }
+
+  .image-container {
+    display: none; /* Bild ausblenden */
+  }
+
+  .text-container {
+    width: 90%; /* Textcontainer auf 90% der Breite setzen */
+    padding: 0 5%; /* Gleichmäßiger Abstand zu den Seitenrändern */
+    text-align: center; /* Text zentriert ausrichten */
+    margin-bottom: 20px; /* Abstand zum nächsten Abschnitt */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Code nur für Bildschirme mit maximal 768px Breite */
+  .section-divider {
+    display: none; /* Linie ausblenden */
+  }
+
+  .section.reversed {
+    flex-direction: column; /* Elemente vertikal anordnen */
+    align-items: center; /* Zentriert den Inhalt horizontal */
+  }
+
+  .section.reversed .text-container {
+    width: 90%; /* Textcontainer auf 90% der Breite setzen */
+    padding: 0 5%; /* Gleichmäßiger Abstand zu den Seitenrändern */
+    text-align: center; /* Text zentriert ausrichten */
+    margin-bottom: 20px; /* Abstand zum nächsten Abschnitt */
+  }
+
+  .section.reversed .image-container {
+    width: 100%; /* Bild über die gesamte Breite des Bildschirms */
+    padding: 0; /* Kein zusätzlicher Abstand zum Rand */
+    margin-bottom: 20px; /* Abstand zum nächsten Abschnitt */
+  }
+}
+
+.mobile-divider {
+  display: none; /* Versteckt die Linie in der Desktopansicht */
+}
+
+@media screen and (max-width: 768px) {
+  /* Code nur für Bildschirme mit maximal 768px Breite */
+  .mobile-divider {
+    display: block; /* Zeigt die Linie in der mobilen Ansicht an */
+    width: 100%; /* Die Linie erstreckt sich über die volle Breite */
+    height: 1px; /* Die Linie ist 1px hoch */
+    background-color: #00FF00; /* Die Linie ist neongrün */
+    margin: 20px 0; /* 20px Abstand oben und unten zur Linie */
+  }
 }
