@@ -1,24 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 
 body {
-  background-color: black;
-  color: white;
+  background-color: #d7d7d7;
+  color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   height: 100%;
   margin: 0;
-  padding: 0; /* Entfernt den Standard-Innenabstand */
+  padding: 0;
   font-family: Arial, sans-serif;
 }
 
 .spacer {
-  height: 100px; /* Hinzufügen eines Abstands oberhalb des ersten Abschnitts */
+  height: 100px;
 }
 
 .header {
-  position: relative; /* Positionierung für den grünen Streifen */
+  position: relative;
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -48,16 +48,16 @@ h3 {
 
 .circle {
   border-radius: 50%;
-  width: 200px; /* Größere Kreise */
-  height: 200px; /* Größere Kreise */
+  width: 200px;
+  height: 200px;
   background-size: cover;
   background-position: center;
-  margin: -15px; /* Erzeugt eine Überschneidung */
+  margin: -15px;
 }
 
 .circle:nth-child(1) {
   background-image: url('img/bild1.jpg');
-  z-index: 2; /* Dieser Kreis liegt jetzt über den anderen */
+  z-index: 2;
 }
 
 .circle:nth-child(2) {
@@ -77,22 +77,22 @@ h3 {
 
 /* Grüner Streifen */
 .green-bar {
-  position: fixed; /* Fixierung am oberen Rand der Seite */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #00FF00; /* Neon Grün */
-  padding: 10px; /* Anpassen des Abstands innerhalb des Streifens */
+  background-color: #003366;
+  padding: 10px;
   text-align: center;
-  z-index: 999; /* Stellt sicher, dass der Streifen über anderen Elementen liegt */
+  z-index: 999;
 }
 
 .green-bar h2 {
-  margin: 0; /* Entfernen Sie den Standardabstand um den Text */
-  font-size: 1.2em; /* Schriftgröße anpassen */
+  margin: 0;
+  font-size: 1.2em;
   font-weight: bold;
   font-style: italic;
-  color: black; /* Schriftfarbe */
+  color: white;
 }
 
 /* Zweiter Abschnitt */
@@ -100,12 +100,13 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 0; /* Erhöht den Abstand zwischen den Abschnitten */
+  padding: 100px 0;
+  position: relative;
 }
 
 .image-container {
-  width: 25%; /* Verkleinert das Bild um 50% */
-  padding: 0 200px; /* Fügt Abstand zum linken und rechten Rand hinzu */
+  width: 25%;
+  padding: 0 200px;
 }
 
 .image-container img {
@@ -113,10 +114,9 @@ h3 {
   height: auto;
 }
 
-.text-container
-{
+.text-container {
   width: 60%;
-  padding-right: 100px; /* Fügt Abstand zum rechten Rand hinzu */
+  padding-right: 100px;
   text-align: right;
 }
 
@@ -129,17 +129,17 @@ h3 {
 
 .text-container p {
   font-family: 'Arial', sans-serif;
-  font-size: 1em; /* Gleiche Schriftgröße wie "Stipendium: Woman in Tech" */
-  line-height: 1.5; /* Gleicher Zeilenabstand wie "Stipendium: Woman in Tech" */
+  font-size: 1em;
+  line-height: 1.5;
   font-style: normal;
 }
 
-/* Dünne grüne Linie zwischen dem zweiten und dritten Abschnitt */
+/* Dünne grüne Linie zwischen den Abschnitten */
 .section-divider {
-  width: 90%; /* Verkürzt die Breite der Linie */
+  width: 80%;
   height: 1px;
-  background-color: #00FF00; /* Neon Grün */
-  margin: 20px auto; /* Zentriert die Linie und fügt Abstand oben und unten hinzu */
+  background-color: #003366;
+  margin: 20px auto;
 }
 
 /* Dritter Abschnitt */
@@ -149,24 +149,24 @@ h3 {
 
 .section.reversed .text-container {
   text-align: right;
-  padding-right: 200px; /* Vergrößern des Abstands zum rechten Rand */
-  padding-left: 200px; /* Vergrößern des Abstands zum linken Rand */
+  padding-right: 200px;
+  padding-left: 200px;
 }
 
 .section.reversed .image-container {
-  width: 25%; /* Verkleinert das Bild um 35% */
-  padding: 0 50px; /* Fügt Abstand zum linken und rechten Rand hinzu */
+  width: 25%;
+  padding: 0 50px;
 }
 
 /* Hellgrauer Streifen mit Zitat */
 .quote-container {
-  background-color: #f5f5f5; /* Hellgrau */
+  background-color: #f5f5f5;
   padding: 20px;
   text-align: center;
   margin: 0;
-  width: 90%; /* Anpassen der Breite auf 90% */
-  margin: 0 auto; /* Zentrieren des Streifens */
-  position: fixed; /* Festpositionierung am unteren Rand der Seite */
+  width: 90%;
+  margin: 0 auto;
+  position: fixed;
   bottom: 0;
 }
 
@@ -174,7 +174,24 @@ h3 {
   font-style: italic;
   font-size: 1.2em;
   margin: 0;
-  color: black; /* Schriftfarbe auf schwarz setzen */
+  color: black;
+}
+
+.mobile-divider {
+  display: none;
+}
+
+.scroll-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.scroll-up img {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
@@ -223,60 +240,87 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
-  /* Code nur für Bildschirme mit maximal 768px Breite */
   .section {
-    flex-direction: column; /* Elemente vertikal anordnen */
-    align-items: center; /* Zentriert den Inhalt horizontal */
+    flex-direction: column;
+    align-items: center;
   }
 
   .image-container {
-    display: none; /* Bild ausblenden */
+    display: none;
   }
 
   .text-container {
-    width: 90%; /* Textcontainer auf 90% der Breite setzen */
-    padding: 0 5%; /* Gleichmäßiger Abstand zu den Seitenrändern */
-    text-align: center; /* Text zentriert ausrichten */
-    margin-bottom: 20px; /* Abstand zum nächsten Abschnitt */
+    width: 90%;
+    padding: 0 5%;
+    text-align: center;
+    margin-bottom: 20px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  /* Code nur für Bildschirme mit maximal 768px Breite */
-  .section-divider {
-    display: none; /* Linie ausblenden */
+  .section + .section {
+    border-top: 1px solid #003366;
   }
+  
 
   .section.reversed {
-    flex-direction: column; /* Elemente vertikal anordnen */
-    align-items: center; /* Zentriert den Inhalt horizontal */
+    flex-direction: column;
+    align-items: center;
   }
 
   .section.reversed .text-container {
-    width: 90%; /* Textcontainer auf 90% der Breite setzen */
-    padding: 0 5%; /* Gleichmäßiger Abstand zu den Seitenrändern */
-    text-align: center; /* Text zentriert ausrichten */
-    margin-bottom: 20px; /* Abstand zum nächsten Abschnitt */
+    width: 90%;
+    padding: 0 5%;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   .section.reversed .image-container {
-    width: 100%; /* Bild über die gesamte Breite des Bildschirms */
-    padding: 0; /* Kein zusätzlicher Abstand zum Rand */
-    margin-bottom: 20px; /* Abstand zum nächsten Abschnitt */
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
   }
 }
 
 .mobile-divider {
-  display: none; /* Versteckt die Linie in der Desktopansicht */
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
-  /* Code nur für Bildschirme mit maximal 768px Breite */
   .mobile-divider {
-    display: block; /* Zeigt die Linie in der mobilen Ansicht an */
-    width: 100%; /* Die Linie erstreckt sich über die volle Breite */
-    height: 1px; /* Die Linie ist 1px hoch */
-    background-color: #00FF00; /* Die Linie ist neongrün */
-    margin: 20px 0; /* 20px Abstand oben und unten zur Linie */
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #003366;
+    margin: 20px 0;
   }
+}
+
+#section3 {
+  border-top: 1px solid #003366;
+}
+
+#section3 {
+  background-color: #ff8500; /* Hintergrundfarbe entsprechend dem Corporate Design der IUBH */
+}
+
+#section3 .image-container img {
+  border: 10px solid #ff8500; /* Orangefarbener Rahmen */
+}
+
+#section4 {
+  border-top: 1px solid #003366;
+}
+
+#section5 {
+  border-top: 1px solid #003366;
+}
+
+#section2 .section-divider,
+#section3 .section-divider,
+#section4 .section-divider,
+#section5 .section-divider {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
