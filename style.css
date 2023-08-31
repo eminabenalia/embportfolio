@@ -75,7 +75,48 @@ h3 {
   z-index: 1; 
 }
 
-/* Grüner Streifen */
+/* Stil für den blauen Button */
+.blue-button {
+  background-color: #003366;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* Stil für das Dropdown-Menü */
+.download-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Zeige das Dropdown-Menü, wenn der Button angeklickt wird */
+.download-button:hover .dropdown-content {
+  display: block;
+}
+
+/* Blauer Streifen */
 .green-bar {
   position: fixed;
   top: 0;
